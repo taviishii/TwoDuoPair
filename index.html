@@ -3,63 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Scavenger Hunt</title>
+    <title>Yedashians Dashboard</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="header">
-        <h1>Campus Scavenger Hunt</h1>
+    <!-- Header with Sign In/Sign Up -->
+    <header>
+        <div class="logo">Yedashians</div>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#clues">Clues</a></li>
-                <li><a href="#leaderboard">Leaderboard</a></li>
-                <li><a href="#teams">Teams</a></li>
-            </ul>
+            <a href="signin.html">Sign In</a> | <a href="signup.html">Sign Up</a>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main id="main-content">
-        <!-- Home Section -->
-        <section id="home">
-            <h2>Welcome to the Campus Scavenger Hunt!</h2>
-            <p>Explore campus locations by following clues and earn points to rank on the leaderboard.</p>
-            <button onclick="startGame()">Start Game</button>
+    <!-- Main Dashboard Section -->
+    <main class="dashboard">
+        <section class="objective">
+            <h2>Our Objective</h2>
+            <p>Helping people find convenient meeting spots for pre-concert hangouts or meetups, especially in busy urban areas. Underlining the need for a midway point that saves time and matches user preferences.</p>
         </section>
-
-        <!-- Clues Section -->
-        <section id="clues" style="display: none;">
-            <h2>Clues</h2>
-            <p id="current-clue">Find the next clue at: <span>Library Entrance</span></p>
-            <button onclick="nextClue()">Next Clue</button>
+        
+        <section class="target-audience">
+            <h2>Target Audience</h2>
+            <p>Our platform caters to concert-goers, event enthusiasts, and anyone looking to meet friends or dates halfway for a convenient hangout spot that matches mutual interests.</p>
         </section>
-
-        <!-- Leaderboard Section -->
-        <section id="leaderboard" style="display: none;">
-            <h2>Leaderboard</h2>
-            <ul id="leaderboard-list">
-                <li>1. Player A - 500 points</li>
-                <li>2. Player B - 450 points</li>
-                <!-- More players can be added here dynamically -->
-            </ul>
-        </section>
-
-        <!-- Teams Section -->
-        <section id="teams" style="display: none;">
-            <h2>Your Team</h2>
-            <p>Create or join a team to complete the hunt with friends!</p>
-            <button onclick="createTeam()">Create Team</button>
-            <button onclick="joinTeam()">Join Team</button>
+        
+        <section class="reviews">
+            <h2>User Reviews</h2>
+            <p>"Amazing platform to meet halfway and find cool places!" - User A</p>
+            <p>"Great recommendations for pre-concert hangouts!" - User B</p>
+            <!-- Add more reviews as needed -->
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Campus Scavenger Hunt</p>
+        <p>&copy; 2023 Yedashians. All Rights Reserved.</p>
     </footer>
-
-    <script src="scripts/main.js"></script>
 </body>
 </html>
