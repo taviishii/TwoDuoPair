@@ -1,29 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AddressForm from './AddressForm'; 
-import NewPage from './NewPage';
+import VenueSearch from './VenueSearch';
 import './App.css';
+
 function App() {
-  
   return (
-      <Router>
-        <div>
-          <nav>
-            {/* Add navigation links */}
-            <a href="/new-page">Find Places</a>
-          </nav>
-  
-          <Routes>
-            {/* Define your routes */}
-            <Route path="/" element={<AddressForm />} />
-            <Route path="/new-page" element={<NewPage />} />
-          </Routes>
-        </div>
-      </Router>
-    );
-      // <div className="content">
-      //   <AddressForm/>
-      // </div>
+    <Router>
+      <div className="app-container">
+        <nav className="main-nav">
+          <h1>Two Duo Pair</h1>
+        </nav>
+        
+        <Routes>
+          <Route path="/" element={<VenueSearch />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
