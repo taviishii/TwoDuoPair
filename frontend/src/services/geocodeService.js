@@ -13,4 +13,4 @@ export const geocodeAddress = async (address) => {
         console.error("Error with geocoding:", error);
         throw error;
     }
-};
+}; 

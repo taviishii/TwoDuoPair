@@ -17,7 +17,20 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.venue-search h1 {
+.main-nav {
+  background: linear-gradient(135deg, #4a90e2, #764ba2);
+  padding: 1rem 2rem;
+  margin: -2.5rem -2.5rem 2rem -2.5rem;
+  border-radius: 24px 24px 0 0;
+}
+
+.main-nav h1 {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.content h1 {
   text-align: center;
   color: #2d3748;
   margin-bottom: 2.5rem;
@@ -245,6 +258,25 @@ body {
   display: inline-block;
 }
 
+.maps-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background: #4285f4;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.maps-link:hover {
+  background: #1a73e8;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(66, 133, 244, 0.3);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .venue-search {
@@ -270,4 +302,45 @@ body {
   .sort-controls select {
     width: 100%;
   }
+}
+
+.place-details {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.place-details > div {
+  margin: 0.5rem 0;
+}
+
+.place-details .label {
+  font-weight: 600;
+  color: #2d3748;
+  margin-right: 0.5rem;
+}
+
+.price-level {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #ebf4ff;
+  border-radius: 4px;
+  color: #4a5568;
+  margin-right: 0.5rem;
+}
+
+.rating {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #fefcbf;
+  border-radius: 4px;
+  color: #4a5568;
+}
+
+.phone {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #e6fffa;
+  border-radius: 4px;
+  color: #4a5568;
 } 
