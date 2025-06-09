@@ -1,0 +1,340 @@
+:root {
+  --primary-color: #ff69b4;
+  --primary-light: #ffb6c1;
+  --secondary-color: #ffc0cb;
+  --text-color: #333333;
+  --text-light: #666666;
+  --background: #ffffff;
+  --background-alt: #fef6f9;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.home-nav {
+  background-color: var(--background);
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow);
+}
+
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.logo-dot {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-links .cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-links .cta-button:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.hero {
+  position: relative;
+  padding: 8rem 2rem 6rem;
+  background: linear-gradient(135deg, var(--background-alt) 0%, var(--background) 100%);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(var(--accent-color) 2px, transparent 2px);
+  background-size: 30px 30px;
+  opacity: 0.1;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 25px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.how-it-works {
+  padding: 6rem 2rem;
+  background-color: var(--background);
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-content h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.section-content h3 {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.step {
+  padding: 2rem;
+  background-color: var(--background);
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-icon svg {
+  width: 40px;
+  height: 40px;
+  color: var(--primary-color);
+}
+
+.step h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.step p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.benefits {
+  padding: 6rem 2rem;
+  background-color: var(--background-alt);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.benefit-card {
+  padding: 2rem;
+  background-color: var(--background);
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.benefit-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.cta-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-color) 100%);
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-section .cta-button {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.cta-section .cta-button:hover {
+  background-color: var(--background);
+}
+
+.footer {
+  padding: 3rem 2rem;
+  background-color: var(--background);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+  }
+  
+  .hero {
+    padding: 6rem 1rem 4rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.125rem;
+  }
+  
+  .section-content h2 {
+    font-size: 2rem;
+  }
+  
+  .benefits h2 {
+    font-size: 2rem;
+  }
+} 

@@ -1,3 +1,74 @@
+:root {
+  --primary-color: #B8E2F2;  /* Pastel Blue */
+  --secondary-color: #FFE5E5; /* Pastel Pink */
+  --accent-color: #B8F2D8;   /* Pastel Green */
+  --text-color: #2D3748;
+  --light-text: #4A5568;
+  --background: #FFFFFF;
+  --hover-color: #E2F0FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--background);
+  line-height: 1.5;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B8E2F2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ecfe2;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +107,5 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom styles that can't be handled by Tailwind can go here */
