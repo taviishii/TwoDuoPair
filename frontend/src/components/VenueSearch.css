@@ -1,19 +1,7 @@
 .venue-search {
   min-height: 100vh;
   background-color: var(--background-alt);
-}
-
-.main-nav {
-  background-color: var(--background);
-  padding: 1rem 2rem;
-  border-bottom: 2px solid var(--text-color);
-}
-
-.main-nav h1 {
-  color: var(--text-color);
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-color: black;
 }
 
 .content {
@@ -70,7 +58,7 @@
   width: 100%;
   padding: 0.75rem;
   background-color: var(--primary-color);
-  color: white;
+  color: black;
   border: 2px solid var(--text-color);
   border-radius: 8px;
   font-size: 1rem;
@@ -177,13 +165,13 @@
 }
 
 .venue-card.selected {
-  border-color: var(--primary-color);
-  box-shadow: 3px 3px 0 var(--primary-color);
+  border-color: #cc9696;
+  box-shadow: 3px 3px 0 #cc9696;
 }
 
 .venue-card.selected:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0 var(--primary-color);
+  box-shadow: 5px 5px 0 #cc9696;
 }
 
 .venue-name {

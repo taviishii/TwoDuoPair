@@ -184,10 +184,6 @@ const VenueSearch = () => {
 
   return (
     <div className="venue-search">
-      <nav className="main-nav">
-        <h1>Two Duo Pair</h1>
-      </nav>
-      
       <div className="content">
         <h2>Find Places Between Two Locations</h2>
         
