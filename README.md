@@ -25,9 +25,6 @@ Cut down the time spent planning.
 Make spontaneous meetups more efficient and fun.
 
 <h3>👩‍💻 Built With ❤️ by</h3>
-<br>
 <h6>Tavishi Sharma</h6>
-<br>
 <h6>Anchi Kansal</h6>
-<br>
 <h6>Aashka Chhabra</h6>
