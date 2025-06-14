@@ -269,4 +269,36 @@ body {
   .steps-container {
     grid-template-columns: 1fr;
   }
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-card h4 {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.benefit-card p {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  line-height: 1.6;
 } 

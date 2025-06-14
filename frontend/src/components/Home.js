@@ -21,6 +21,25 @@ const Home = () => {
     ), url: 'https://facebook.com/twoduo' }
   ];
 
+  const benefits = [
+    {
+      title: "Save Time",
+      description: "Quickly find the best meeting spot without manual searching"
+    },
+    {
+      title: "Optimal Locations",
+      description: "Our algorithm ensures the most convenient location for all participants"
+    },
+    {
+      title: "Easy Coordination",
+      description: "Seamlessly coordinate meeting details with suggested locations"
+    },
+    {
+      title: "Secure & Private",
+      description: "Your location data is kept private and secure"
+    }
+  ];
+
   return (
     <div className="home">
       <nav className="home-nav">
@@ -50,7 +69,7 @@ const Home = () => {
           
           <div className="steps-container">
             <div className="step">
-              <div className="step-image" style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuB71vh_JuTNxU0m9M2euNHYB-HAGH2P4nHZLbF8QSGcFHKPlNiB1ntGw8YKQnIYLAkxXIrXEw9zSjfVRsNrnZio3d__EELvemv3x5C8EXKPqwv1C3PyCECxIVitgU7oRGl3AnDG3E6BuudD4t3Y11t0yWWPUjNB1hoKpYjnWDgAKOEhL6710e_szWNTsOCLSbcYCDRq7PnqydqbQRs8cX1M5rJo7YD79pjrlJC4qSDvVrNR5Eph4lDbmZ-Z9ruZiQdSJPmwIo98eiw")' }} />
+              <div className="step-image" style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuAiUTLpREHvCZiCR05bSVXptMrRBdHJgpVHrHHI07pf-4JWp_OfHMaV7XrQQEqUEbj90McH9XJtEjRahpeaYeHjqI4MtytpYYzkAjDzL2yYiAMg0NKJ-wAOnlbkZxcVwF5ou-auLZRjBbbmlrBTfvDEPvDJOrFVJ7-pBtAI6z36HjcI_Lc6Slo_S4-LjZoTcCAr7FD0gTrgLuNDA9dSDnSQncUEUSSVWu631QOrHMIDjelcvoC15Fwn1yQdRBhsOLxsOcDQQXJp6VM")' }} />
               <h4>Enter Locations</h4>
               <p>Input the addresses or locations of both meeting participants.</p>
             </div>
@@ -77,30 +96,8 @@ const Home = () => {
           <h3>Discover the benefits of using our service</h3>
 
           <div className="benefits-grid">
-            {[
-              {
-                icon: "⚡",
-                title: "Save Time",
-                description: "Quickly find the best meeting spot without manual searching"
-              },
-              {
-                icon: "📍",
-                title: "Optimal Locations",
-                description: "Our algorithm ensures the most convenient location for all participants"
-              },
-              {
-                icon: "🤝",
-                title: "Easy Coordination",
-                description: "Seamlessly coordinate meeting details with suggested locations"
-              },
-              {
-                icon: "🔒",
-                title: "Secure & Private",
-                description: "Your location data is kept private and secure"
-              }
-            ].map((benefit, index) => (
+            {benefits.map((benefit, index) => (
               <div key={index} className="benefit-card">
-                <div className="benefit-icon">{benefit.icon}</div>
                 <h4>{benefit.title}</h4>
                 <p>{benefit.description}</p>
               </div>
@@ -124,7 +121,7 @@ const Home = () => {
           <div className="footer-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
-            <a href="#">Contact Us</a>
+            <Link to="/founders">Contact Us</Link>
           </div>
           <div className="social-links">
             {socialLinks.map(({ name, icon, url }) => (
