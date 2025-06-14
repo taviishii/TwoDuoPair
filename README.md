@@ -1,6 +1,6 @@
 # TwoDuoPair
 
-TwoDuoPair is a web application that helps two individuals find an ideal meeting location based on their preferences and geographical feasibility. Whether it's catching up with a friend, meeting a colleague halfway, or planning a casual hangout, TwoDuoPair takes the hassle out of choosing the perfect spot.
+TwoDuoPair is a full-stack location-based web app that helps two individuals find ideal meeting venues based on their locations and preferences. Whether it's catching up with a friend, meeting a colleague halfway, or planning a spontaneous hangout, TwoDuoPair takes the hassle out of choosing the perfect spot.
 
 ![Landing Page](https://imgur.com/Y97RoWR.png)
 
@@ -15,7 +15,7 @@ Enjoy real-time autocomplete for addresses and locations, simplifying the proces
 ![Dynamic Location Search](https://imgur.com/4idqid1.png)
 
 ### 👫 Midpoint Finder
-Automatically suggests optimal venues that are equidistant from both users, ensuring fairness and convenience.
+Automatically suggests optimal venues that are equidistant from both users, ensuring fairness and convenience using the Haversine formula.
 
 ### 🌍 Explore New Places
 Discover exciting new cafes, hangout spots, and venues around your midpoint.
@@ -35,13 +35,18 @@ Prevent the blame game and decision fatigue over where to meet with automated, f
 
 ---
 
-## 🎯 Use Case
+## 🧰 Tech Stack
 
-Meeting a friend or colleague but unsure where to go? TwoDuoPair helps you:
-
-- Choose neutral and fair meeting points.  
-- Cut down the time spent planning.  
-- Make spontaneous meetups more efficient and fun.  
+- **Frontend**: React.js  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB 
+- **Maps & Geolocation**: Leaflet, OpenStreetMap, Google Places API, Overpass API  
+- **Geocoding Logic**: Haversine formula for midpoint calculations  
+- **Features**:  
+  - Dual-location input with real-time geocoding  
+  - Interactive maps with custom markers & popups  
+  - Category-based venue filtering  
+  - Smart directions & integration with Google Maps  
 
 ---
 
